@@ -6,7 +6,7 @@ import (
 
 var requiredProps = [2]string{"client_id", "client_secret"}
 
-func loadConfig() map[string]string {
+func LoadConfig() map[string]string {
 	config := make(map[string]string, 2)
 
 	viper.SetConfigType("json")
